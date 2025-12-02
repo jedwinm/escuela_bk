@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)https://escueladelapalabra.edu.co/#contact -->
+<html lang="es" style=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!-- Theme Made By www.w3schools.com - No Copyright -->
+	<title>Escuela de la Palabra</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="./Escuela de la Palabra_files/bootstrap.min.css" rel="stylesheet">
+	<link href="./Escuela de la Palabra_files/css" rel="stylesheet" type="text/css">
+	<link href="./Escuela de la Palabra_files/css(1)" rel="stylesheet" type="text/css"><script src="./Escuela de la Palabra_files/jquery.min.js.descarga"></script><script src="./Escuela de la Palabra_files/bootstrap.min.js.descarga"></script>
+	<link href="./Escuela de la Palabra_files/font-awesome.min.css" rel="stylesheet">
+	<link href="./Escuela de la Palabra_files/w3.css" rel="stylesheet"><!-- Icono de la página web -->
+	<link href="https://escueladelapalabra.edu.co/img/inicio/icono_manito.png" rel="icon" type="image/jpg"><!-- enlace a la página de estilos -->
+	<link href="./Escuela de la Palabra_files/estilos.css" rel="stylesheet">
+<script>
+   $(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+
+//Mostrar los gifs de señas
+$(document).ready(function(){
+ 
+  $("#imagen0").hover(function(){
+    $("#img0").show();
+  }, function(){
+    $("#img0").hide();
+  });
+
+  $("#imagen2").hover(function(){
+    $("#img2").show();
+  }, function(){
+    $("#img2").hide();
+  });
+
+  $("#imagen3").hover(function(){
+    $("#img3").show();
+  }, function(){
+    $("#img3").hide();
+  });
+
+  $("#imagen4").hover(function(){
+    $("#img4").show();
+  }, function(){
+    $("#img4").hide();
+  });
+
+  $("#imagen5").hover(function(){
+    $("#img5").show();
+  }, function(){
+    $("#img5").hide();
+  });
+
+  $("#imagen6").hover(function(){
+    $("#img6").show();
+  }, function(){
+    $("#img6").hide();
+  });
+
+  $("#imagen7").hover(function(){
+    $("#img7").show();
+  }, function(){
+    $("#img7").hide();
+  });
+
+  $("#imagen8").hover(function(){
+    $("#img8").show();
+  }, function(){
+    $("#img8").hide();
+  });
+
+  $("#imagen9").hover(function(){
+    $("#img9").show();
+  }, function(){
+    $("#img9").hide();
+  });
+
+  $("#imagen10").hover(function(){
+    $("#img10").show();
+  }, function(){
+    $("#img10").hide();
+  });
+
+  $("#imagen11").hover(function(){
+    $("#img11").show();
+  }, function(){
+    $("#img11").hide();
+  });
+
+  $("#imagen12").hover(function(){
+    $("#img12").show();
+  }, function(){
+    $("#img12").hide();
+  });
+
+});
+
+
+
+
+    </script></head>
+<!-- ************ --><!-- JAVASCRIPT -->
+<body data-offset="60" data-spy="scroll" data-target=".navbar" id="myPage" style="">
+<header><!-- NOMBRE DEL COLEGIO --><a href="https://escueladelapalabra.edu.co/"> </a>
+<div class="imagen"><a href="https://escueladelapalabra.edu.co/"><img alt="I.E.Escuela de la Palabra" class="img-responsive" src="./Escuela de la Palabra_files/encabezado.png"> </a></div>
+<a href="https://escueladelapalabra.edu.co/"> </a></header>
+<!-- ******************* --><!-- BARRA DE NAVEGACIÓN -->
+
+<nav class="navbar navbar-default navbar-fixed-top" style="">
+<div class="container">
+<div class="navbar-header"><button class="navbar-toggle" data-target="#myNavbar" data-toggle="collapse" type="button"></button><a class="navbar-brand" href="https://escueladelapalabra.edu.co/#myPage">Logo</a></div>
+
+<div class="collapse navbar-collapse" id="myNavbar">
+<ul class="nav navbar-nav navbar-right">
+	<li class=""><a href="https://escueladelapalabra.edu.co/#about">INSTITUCIONAL</a></li>
+	<li class=""><a href="https://escueladelapalabra.edu.co/#services">COMUNIDAD</a></li>
+	<li class=""><a href="https://escueladelapalabra.edu.co/#portfolio">PROYECTOS</a></li>
+	<li class=""><a href="https://escueladelapalabra.edu.co/#pricing">NOVEDADES</a></li>
+	<li class=""><a href="https://escueladelapalabra.edu.co/#contact">CONTACTO</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<!--
+      <div class="jumbotron text-center">
+        <h1>Escuela de la Palabra</h1> 
+        <p>La calidad está en nuestras manos</p> 
+      </div>
+      --><!-- ******************* --><!--       SLIDER        -->
+
+<div class="carousel slide" data-ride="carousel" id="myCarousel"><!-- Indicators -->
+<ol class="carousel-indicators">
+	<li class="" data-slide-to="0" data-target="#myCarousel"></li>
+	<li data-slide-to="1" data-target="#myCarousel" class=""></li>
+	<li data-slide-to="2" data-target="#myCarousel" class=""></li>
+	<li data-slide-to="3" data-target="#myCarousel" class="active"></li>
+</ol>
+<!-- Wrapper for slides -->
+
+<div class="carousel-inner" role="listbox">
+<div class="item"><img alt="" src="./Escuela de la Palabra_files/imagen1.jpg" style="height: 765px; width: 1020px;"> <!-- <img src="img/slider/imagen4.jpg" alt="" width="1200" height="700"> -->
+<div class="carousel-caption">
+<h3>I.E. Escuela de la Palabra</h3>
+
+<p>Sede Nueva</p>
+</div>
+</div>
+
+<div class="item"><img alt="" src="./Escuela de la Palabra_files/imagen3.jpg">
+<div class="carousel-caption">
+<h3>I.E. Escuela de la Palabra</h3>
+
+<p>Sede Nueva</p>
+</div>
+</div>
+
+<div class="item"><img alt="" src="./Escuela de la Palabra_files/imagen2.jpg">
+<div class="carousel-caption">
+<h3>I.E. Escuela de la Palabra</h3>
+
+<p>Sede Nueva</p>
+</div>
+</div>
+
+<div class="item active"><img alt="" src="./Escuela de la Palabra_files/imagen4.jpg">
+<div class="carousel-caption">
+<h3>I.E. Escuela de la Palabra</h3>
+
+<p>Sede Nueva</p>
+</div>
+</div>
+</div>
+<!-- Left and right controls --><a class="left carousel-control" data-slide="prev" href="https://escueladelapalabra.edu.co/#myCarousel" role="button"><span class="sr-only">Previous</span> </a> <a class="right carousel-control" data-slide="next" href="https://escueladelapalabra.edu.co/#myCarousel" role="button"> <span class="sr-only">Next</span> </a></div>
+<!-- **************************** --><!-- CONTENEDOR DE: INSTITUCIONAL --><!-- Container (Sección: Acerca de nosotros) -->
+
+<div class="container-fluid" id="about">
+<div class="row">
+<div class="col-sm-8">
+<h2>Nuestra Institución</h2>
+<br>
+<!-- <h4>La Institución Educativa Escuela de la Palabra, es de carácter oficial. Su misión es la creación de Comunidad Educativa Señante que permita la inclusión de niños, niñas, jóvenes oyentes y en situación de discapacidad auditiva a través de un proyecto de educación formal innovador que rescata el valor de la Lengua de Señas Colombiana, como vehículo de comunicación y la coloca al servicio de la humanidad.  Como institución incluyente promueve el respeto por las diferencias además de transformar los imaginarios para brindar equiparación de oportunidades y equidad en todos los espacios en los que interactúa la comunidad escolar.</h4> --><br>
+<button class="btn btn-default btn-lg">Procesos Institucionales</button><!-- <br><br><a href="siie.html"><button class="btn btn-default btn-lg">Sistema Institucional de Evaluación</button></a> --><br>
+<br>
+<button class="btn btn-default btn-lg">Sistema Institucional de Evaluación de Aprendizajes y Promoción de los Estudiantes - SIEAPE</button><br>
+<br>
+<button class="btn btn-default btn-lg">Convivencia Escolar</button></div>
+
+<div class="col-sm-4"><img alt="" src="./Escuela de la Palabra_files/Escudo2.png"></div>
+</div>
+</div>
+<!-- Container (Sección: Nuestros Valores) -->
+
+<div class="container-fluid bg-grey">
+<div class="row">
+<div class="col-sm-4"><img alt="" src="./Escuela de la Palabra_files/manito.png"> <!-- <span class="glyphicon glyphicon-globe logo slideanim"></span> --></div>
+
+<div class="col-sm-8">
+<h2>NUESTROS VALORES</h2>
+&nbsp;
+
+<h4><strong>MISIÓN:</strong> Somos una institución educativa de carácter oficial que presta servicios de formación académica con profundización en lengua de señas colombiana, en los niveles de primaria y secundaria. Promovemos los valores de respeto por la diversidad, responsabilidad, trabajo en equipo y una comunicación asertiva, para potenciar el desarrollo humano y proyecto de vida de la comunidad educativa.</h4>
+&nbsp;
+
+<p><strong>VISIÓN:</strong> Al 2025 la Escuela la Palabra se proyecta como una institución con altos estándares de excelencia académica, reconocida por sus políticas de inclusión con personas en situación de discapacidad auditiva y población diversa, generadora de habilidades y competencias para la construcción de proyectos de vida en el campo laboral y social; reconocida por la idoneidad de sus colaboradores y la calidad en los procesos directivos y administrativos.</p>
+</div>
+</div>
+</div>
+<!-- ************************ --><!-- CONTENEDOR DE: COMUNIDAD --><!-- Container (Sección: Comunidad) -->
+
+<div class="container-fluid text-center" id="services">
+<h2>COMUNIDAD</h2>
+
+<h4>Nuestros Procesos</h4>
+<br>
+<!-- PRIMERA FILA -->
+<div class="row slideanim slide"><!-- Plataforma de notas -->
+<div class="col-sm-4"><!-- Enlace a la página de Colagge -->
+<div id="imagen0"><a href="https://s5.plataformaacademica.com:7778/lapalabra/#!/app/campus"><img alt="" src="./Escuela de la Palabra_files/collage-p.png"> </a></div>
+<!-- Mostrar la seña de Collage -->
+
+<div class="gifsenias" id="img0"><img src="./Escuela de la Palabra_files/collage_se.gif"></div>
+<!-- Texto -->
+
+<h4>COLLAGE</h4>
+
+<p>Plataforma acádemica de notas</p>
+</div>
+<!-- Agenda Semanal -->
+
+<div class="col-sm-4">
+<div id="imagen2"><a href="https://drive.google.com/drive/folders/139mjKhHkrpBNHdVY_E1EU22lw8rjI7f5?usp=share_link"><img alt="" src="./Escuela de la Palabra_files/agenda-2.jpg"> </a></div>
+
+<div class="gifsenias" id="img2"><img src="./Escuela de la Palabra_files/agenda_se.gif"></div>
+
+<h4>AGENDA</h4>
+
+<p>Agenda semanal de Actividades institucionales</p>
+</div>
+<!-- Horario de clases -->
+
+<div class="col-sm-4"><!-- Enlace a la página de Horario --><!-- <a href="horario.html"> -->
+<div id="imagen3"><a href="https://escueladelapalabra.edu.co/horario.html"><img alt="" src="./Escuela de la Palabra_files/ico-horario.png"> </a></div>
+<!-- Mostrar la seña de horarion -->
+
+<div class="gifsenias" id="img3"><img src="./Escuela de la Palabra_files/horario_se.gif"></div>
+<!-- Texto -->
+
+<div class="gifsenias" id="img3"><img src="./Escuela de la Palabra_files/videohome.gif"></div>
+
+<h4>HORARIO</h4>
+
+<p>Horario de Clases de Primaria, Secundaria y atención a Padres</p>
+</div>
+</div>
+<br>
+<br>
+<!-- SEGUNDA FILA -->
+<div class="row slideanim slide"><!-- Orientación y Apoyo escolar -->
+<div class="col-sm-4"><!-- Enlace a la página de Orientacion -->
+<div id="imagen4"><a href="https://escueladelapalabra.edu.co/orientacion.html"><img alt="" src="./Escuela de la Palabra_files/ico_orientacion.png"> </a></div>
+<!-- Mostrar la seña de orientacion -->
+
+<div class="gifsenias" id="img4"><img src="./Escuela de la Palabra_files/orientacion_sen.gif"></div>
+<!-- Texto -->
+
+<h4>ORIENTACIÓN Y APOYO ESCOLAR</h4>
+
+<p>Lorem ipsum dolor sit amet..</p>
+</div>
+<!-- Nuestros Docentes -->
+
+<div class="col-sm-4"><!-- Enlace a la página de Docentes -->
+<div id="imagen5"><a href="https://escueladelapalabra.edu.co/docentes.html"><img alt="" src="./Escuela de la Palabra_files/ico_profesor.jpg"> </a></div>
+<!-- Mostrar la seña de Docentes -->
+
+<div class="gifsenias" id="img5"><img src="./Escuela de la Palabra_files/docentes_se.gif"></div>
+<!-- Texto -->
+
+<h4>DOCENTES</h4>
+
+<p>Nombre, asignatura y correo electrónico de los docentes</p>
+</div>
+<!-- COPASST -->
+
+<div class="col-sm-4"><!-- Enlace a la página de Copasst -->
+<div id="imagen6"><a href="https://escueladelapalabra.edu.co/#"><img alt="" src="./Escuela de la Palabra_files/seguridad.jpg"> </a></div>
+<!-- Mostrar la seña de Copasst -->
+
+<div class="gifsenias" id="img6"><img src="./Escuela de la Palabra_files/copass_se.gif"></div>
+<!-- Texto -->
+
+<h4 style="color:#303030;">COPASST</h4>
+
+<p>Funciones e integrantes del Copasst institucional</p>
+</div>
+</div>
+<br>
+<br>
+<!-- TERCERA FILA -->
+<div class="row slideanim slide"><!-- Talleres - Trabajo en Casa -->
+<div class="col-sm-4"><!-- Enlace a la página de Trabajo en Casa -->
+<div id="imagen7"><a href="https://escueladelapalabra.edu.co/trabajo_casa_2021.html"><img alt="" src="./Escuela de la Palabra_files/ico_talleres.png"> </a></div>
+<!-- Mostrar la seña de trabajo -->
+
+<div class="gifsenias" id="img7"><img src="./Escuela de la Palabra_files/trabajo_se.gif"></div>
+<!-- Texto -->
+
+<h4>TRABAJO EN CASA y PRESENCIALIDAD</h4>
+
+<p>Talleres y actividades a realizar en casa, y los protocolos de presencialidad</p>
+</div>
+<!-- LSC -->
+
+<div class="col-sm-4"><!-- Enlace a la página de LSC -->
+<div id="imagen8"><a href="https://escueladelapalabra.edu.co/LSC.html"><img alt="" src="./Escuela de la Palabra_files/ico_lsc.png"> </a></div>
+<!-- Mostrar la seña de LSC -->
+
+<div class="gifsenias" id="img8"><img src="./Escuela de la Palabra_files/lsc-se.gif"></div>
+<!-- Texto -->
+
+<h4>LSC</h4>
+
+<p>Lengua de Señas Colombiana</p>
+</div>
+<!-- Gestión Comunitaria -->
+
+<div class="col-sm-4"><!-- Enlace a la página de LSC -->
+<div id="imagen9"><a href="https://escueladelapalabra.edu.co/#"><img alt="" src="./Escuela de la Palabra_files/ico_familia.jpg"> </a></div>
+<!-- Mostrar la seña de LSC -->
+
+<div class="gifsenias" id="img9"><img src="./Escuela de la Palabra_files/gestion_se.gif"></div>
+<!-- Texto -->
+
+<h4 style="color:#303030;">GESTIÓN COMUNITARIA</h4>
+
+<p>Comunicación e interacción con la Familias</p>
+</div>
+</div>
+<br>
+<br>
+<!-- CUARTA FILA -->
+<div class="row slideanim slide"><!-- Sena -->
+<div class="col-sm-4"><!-- Enlace a la página del Sena -->
+<div id="imagen10"><a href="https://escueladelapalabra.edu.co/#"><img alt="" src="./Escuela de la Palabra_files/logo_sena.jpg"> </a></div>
+<!-- Mostrar la seña de Sena -->
+
+<div class="gifsenias" id="img10"><img src="./Escuela de la Palabra_files/sena_se.gif"></div>
+<!-- Texto -->
+
+<h4>SENA</h4>
+
+<p>Programa de articulación con la Media (10 y 11)</p>
+</div>
+<!-- 3011 -->
+
+<div class="col-sm-4"><!-- Enlace a la página del 3011 -->
+<div id="imagen11"><a href="https://escueladelapalabra.edu.co/la_palabra/index.php"><img alt="" src="./Escuela de la Palabra_files/ico_3011.png"> </a></div>
+<!-- Mostrar la seña de 3011 -->
+
+<div class="gifsenias" id="img11"><img src="./Escuela de la Palabra_files/3011_se.gif"></div>
+<!-- Texto -->
+
+<h4>3011</h4>
+
+<p>Educación de Adultos</p>
+</div>
+<!-- Drive Institucional -->
+
+<div class="col-sm-4"><!-- Enlace a la página del Drive Institucional -->
+<div id="imagen12"><a href="https://accounts.google.com/signin/v2/identifier?service=wise&amp;passive=1209600&amp;continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Fmy-drive%3Fhl%3Des&amp;followup=https%3A%2F%2Fdrive.google.com%2Fdrive%2Fmy-drive%3Fhl%3Des&amp;hl=es&amp;flowName=GlifWebSignIn&amp;flowEntry=ServiceLogin" target="_black"><img alt="" src="./Escuela de la Palabra_files/ico_folder.png"> </a></div>
+<!-- Mostrar la seña del Drive -->
+
+<div class="gifsenias" id="img12"><img src="./Escuela de la Palabra_files/drive_se.gif"></div>
+<!-- Texto -->
+
+<h4 style="color:#303030;">DRIVE</h4>
+
+<p>Ingreso al Drive institucional (Docentes)</p>
+</div>
+</div>
+</div>
+<!-- ************************ --><!-- CONTENEDOR DE: PROYECTOS --><!-- Container (Sección: Proyectos) -->
+
+<div class="container-fluid text-center bg-grey" id="portfolio">
+<h2>Nuestros Proyectos</h2>
+&nbsp;
+
+<h4>Qué hemos creado</h4>
+
+<div class="row text-center slideanim slide">
+<div class="col-sm-4">
+<div class="thumbnail"><a href="https://escueladelapalabra.edu.co/semillero.html"><img alt="danzas" height="300" src="./Escuela de la Palabra_files/danzas.jpg" width="400"> </a>
+
+<p><strong>Semillero de danzas</strong></p>
+
+<p>Nuestros pinitos en danzas</p>
+</div>
+</div>
+
+<div class="col-sm-4">
+<div class="thumbnail"><img alt="proyecto 2" height="300" src="./Escuela de la Palabra_files/Escudo2.png" width="400">
+<p></p>
+
+<p></p>
+</div>
+</div>
+
+<div class="col-sm-4">
+<div class="thumbnail"><img alt="Proyecto 3" height="300" src="./Escuela de la Palabra_files/empoderamiento.jpg" width="400">
+<p><strong>Empoderamiento</strong></p>
+
+<p></p>
+</div>
+</div>
+</div>
+<br>
+<!-- Slider de TEXTO -->
+<h2>Nuestros Estudiantes de Grado 11....</h2>
+
+<div class="carousel slide text-center" data-ride="carousel" id="myCarousel"><!-- Indicators -->
+<ol class="carousel-indicators">
+	<li class="" data-slide-to="0" data-target="#myCarousel"></li>
+	<li data-slide-to="1" data-target="#myCarousel" class="active"></li>
+	<li data-slide-to="2" data-target="#myCarousel"></li>
+</ol>
+<!-- Wrapper for slides -->
+
+<div class="carousel-inner" role="listbox">
+<div class="item">
+<h4>"Gracias Maestro por enseñarme el verdadero valor de la vida, por guiarme para ser cada día mejor persona, gracias por ejercer tan bella profesión y sembrar siempre conocimiento, por compartir ante mí, vivencias únicas y enseñanzas magníficas. Muchas gracias por todo"<br>
+<span>Estudiantes Grado 11</span></h4>
+</div>
+
+<div class="item active">
+<h4>"Como alumnos le agradecemos infinitamente a la comunidad de la Escuela de la Palabra por ayudarnos a sacar lo mejor de nosotros durante la estancia en esta institución, nuestro segundo hogar"<br>
+<span>María José Vélez, Personera</span></h4>
+</div>
+<!-- <div class="item">
+            <h4>Excelente colegio 3"<br><span>Pepita López, Gerente, Atesa 3</span></h4>
+          </div> --></div>
+<!-- Left and right controls --><a class="left carousel-control" data-slide="prev" href="https://escueladelapalabra.edu.co/#myCarousel" role="button"><span class="sr-only">Previous</span> </a> <a class="right carousel-control" data-slide="next" href="https://escueladelapalabra.edu.co/#myCarousel" role="button"> <span class="sr-only">Next</span> </a></div>
+</div>
+<!-- ************************ --><!-- CONTENEDOR DE: NOVEDADES --><!-- Container (Sección: Novedades) -->
+
+<div class="container-fluid" id="pricing">
+<div class="text-center">
+<h2>NOVEDADES</h2>
+
+<h4>Eventos realizados en nuestra institución</h4>
+</div>
+
+<div class="row slideanim slide">
+<div class="col-sm-4 col-xs-12">
+<div class="panel panel-default text-center">
+<div class="panel-heading">
+<h3>REUNIÓNES DE PADRES</h3>
+</div>
+
+<div class="panel-body"><img alt="" height="150" src="./Escuela de la Palabra_files/reunionpadres.png" width="200"> <!-- <p><strong>20</strong> Lorem</p>
+          <p><strong>15</strong> Ipsum</p>
+          <p><strong>5</strong> Dolor</p>
+          <p><strong>2</strong> Sit</p>
+          <p><strong>Endless</strong> Amet</p> --></div>
+
+<div class="panel-footer"><!-- <h3>$19</h3>
+          <h4>per month</h4>
+          <button class="btn btn-lg">Sign Up</button> --></div>
+</div>
+</div>
+
+<div class="col-sm-4 col-xs-12">
+<div class="panel panel-default text-center">
+<div class="panel-heading">
+<h3>ESCUELA DE PADRES</h3>
+</div>
+
+<div class="panel-body"><img alt="" height="150" src="./Escuela de la Palabra_files/escuelafamilia.jpg" width="200"> <!-- <p><strong>50</strong> Lorem</p>
+          <p><strong>25</strong> Ipsum</p>
+          <p><strong>10</strong> Dolor</p>
+          <p><strong>5</strong> Sit</p>
+          <p><strong>Endless</strong> Amet</p> --></div>
+
+<div class="panel-footer"><!-- <h3>$29</h3>
+          <h4>per month</h4>
+          <button class="btn btn-lg">Sign Up</button> --></div>
+
+<div class="panel-footer"><span style="font-size:24px;">CONTRATOS</span></div>
+
+<p>&nbsp;<a href="https://escueladelapalabra.edu.co/contratos.html" target="_blank"><img alt="" src="./Escuela de la Palabra_files/CONTRATO.png" style="width: 150px; height: 150px;"></a></p>
+</div>
+</div>
+
+<div class="col-sm-4 col-xs-12">
+<div class="panel panel-default text-center">
+<div class="panel-heading">
+<h3>EVENTOS</h3>
+</div>
+
+<div class="panel-body"><a href="https://escueladelapalabra.edu.co/eventos.html"><img alt="" height="150" src="./Escuela de la Palabra_files/eventos.png" width="200"> </a> <!-- <p><strong>100</strong> Lorem</p>
+          <p><strong>50</strong> Ipsum</p>
+          <p><strong>25</strong> Dolor</p>
+          <p><strong>10</strong> Sit</p>
+          <p><strong>Endless</strong> Amet</p> --></div>
+
+<div class="panel-footer"><!-- <h3>$49</h3>
+          <h4>per month</h4>
+          <button class="btn btn-lg">Sign Up</button> --></div>
+</div>
+</div>
+</div>
+</div>
+<!-- ************************ --><!-- CONTENEDOR DE: CONTACTO --><!-- Container (Sección: Contacto) -->
+
+<div class="container-fluid bg-grey" id="contact">
+<h2 class="text-center">CONTACTO</h2>
+
+<div class="row">
+<div class="col-sm-5">
+<p>Contactenos....</p>
+
+<p>Pereira, Colombia</p>
+
+<p>606 3343616 - 322 9514686</p>
+
+<p>secretaria@escueladelapalabra.edu.co</p>
+&nbsp;
+
+<p><strong>Rectoría: </strong> rectoria@escueladelapalabra.edu.co</p>
+
+<p><strong>Coordinación:</strong> coordinacion@escueladelapalabra.edu.co</p>
+
+<p><strong>Orientación:</strong> orientacion@escueladelapalabra.edu.co</p>
+
+<p><strong>Apoyo:</strong> apoyo@escueladelapalabra.edu.co</p>
+</div>
+
+<div class="col-sm-7 slideanim slide">
+<div class="row">
+<div class="col-sm-6 form-group"><input class="form-control" id="name" name="name" placeholder="Nombre" required="" type="text"></div>
+
+<div class="col-sm-6 form-group"><input class="form-control" id="email" name="email" placeholder="Correo electrónico" required="" type="email"></div>
+</div>
+<textarea class="form-control" id="comments" name="comments" placeholder="Comentarios" rows="5"></textarea>
+
+<div class="row">
+<div class="col-sm-12 form-group"><button class="btn btn-default pull-right" type="submit">Enviar</button></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Image of location/map --><!-- <footer class="container-fluid text-center">
+      
+      <a href="#myPage" title="To Top">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+      </a>
+      <div class="text-center">
+        <a href="https://www.facebook.com/coordinadora.martha.5" class="fa fa-facebook fa-2x"></a>
+        <a href="#" class="fa fa-youtube fa-2x"></a>
+      </div>
+      <br><br>
+      <p>Institución Educativa Escuela de la Palabra</p>
+      <p>© Todos los derechos reservados</p>
+    </footer> --><!-- Footer -->
+
+<footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
+<div class="w3-row-padding">
+<div class="w3-col s4">
+<h4>Nosotros</h4>
+
+<p><a href="https://escueladelapalabra.edu.co/institucion.html">Quiénes somos</a></p>
+
+<p><a href="https://escueladelapalabra.edu.co/historia.html">Nuestra Historia</a></p>
+
+<p><a href="https://escueladelapalabra.edu.co/simbolos.html">Símbolos</a></p>
+
+<p><a href="https://escueladelapalabra.edu.co/principios.html">Principios</a></p>
+
+<p><a href="https://escueladelapalabra.edu.co/perfiles.html">Perfiles</a></p>
+
+<p><a href="https://escueladelapalabra.edu.co/siie.html">Nuestro SIIE</a></p>
+
+<p><a href="https://escueladelapalabra.edu.co/manual.html">Manual de Convivencia</a></p>
+</div>
+
+<div class="w3-col s4">
+<h4>Comunidad Educativa</h4>
+
+<p><a href="https://s5.plataformaacademica.com:7778/lapalabra/#!/page/login">Plataforma de Notas</a></p>
+
+<p><a href="https://drive.google.com/file/d/1TcqI1hpgGHaSzotzOfOr9VsKzLqpAJg8/view?usp=sharing">Agenda Semanal</a></p>
+<!-- <p><a href="horario.html">Horario Escolar</a></p> -->
+
+<p><a href="https://escueladelapalabra.edu.co/#">Horario Escolar</a></p>
+
+<p><a href="https://escueladelapalabra.edu.co/#">Orientación y Apoyo</a></p>
+
+<p><a href="https://escueladelapalabra.edu.co/docentes.html">Docentes</a></p>
+
+<p><a href="https://escueladelapalabra.edu.co/trabajo_casa_2021.html">Trabajo en Casa</a></p>
+
+<p><a href="https://escueladelapalabra.edu.co/#">Sena</a></p>
+</div>
+
+<div class="w3-col s4">
+<h4>Otros Enlaces</h4>
+
+<p><a href="https://escueladelapalabra.edu.co/#">Semillero de danzas</a></p>
+
+<p><a href="https://escueladelapalabra.edu.co/#">Reuniones de Padres</a></p>
+
+<p><a href="https://escueladelapalabra.edu.co/#">Escuela de Padres</a></p>
+
+<p><a href="https://escueladelapalabra.edu.co/#">Actos Culturales</a></p>
+
+<p><a href="https://escueladelapalabra.edu.co/#">Trabajo en Casa</a></p>
+
+<p><a href="https://escueladelapalabra.edu.co/#">Sena</a></p>
+
+<p><a class="fa fa-facebook-official w3-hover-opacity w3-large" href="https://www.facebook.com/groups/638172967024705">&nbsp;&nbsp;Grupo: Orientación y Apoyo</a></p>
+</div>
+</div>
+</footer>
+
+<footer class="container-fluid text-center">
+<div class="text-center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+&nbsp;
+
+<p>Institución Educativa Escuela de la Palabra</p>
+
+<p>2023</p>
+
+<p>© Todos los derechos reservados</p>
+</footer>
+
+</body><div id="aiFabShadowRoot" style="opacity: 1;"><template shadowrootmode="open"><!-- sidePanelButton.html -->
+
+<style>
+    .acrobat-button-container {
+        position: fixed;
+        right: 0;
+        bottom: 36px;
+        z-index: 2147483646;
+        visibility: visible !important;
+        pointer-events: all;
+        opacity: 1;
+        display: flex;
+        align-items: center;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    @media print {
+        .acrobat-button-container {
+            display: none !important;
+        }
+    }
+
+    .acrobat-button {
+        position: relative;
+        background: white;
+        display: flex;
+        align-items: center;
+        pointer-events: all;
+        touch-action: none;
+        box-shadow: 0px 2px 8px 0px #00000029;
+        height: 34px;
+        width: 34px;
+        border: 1px solid transparent;
+        background-clip: padding-box, border-box;
+        background-origin: border-box;
+        background-image: linear-gradient(white, white),
+                        linear-gradient(95.85deg, #D73220 0%, #D92361 33%, #7155FA 100%);
+        border-radius: 18px;
+        justify-content: right;
+        margin-right: var(--fab-margin-right, 28px);
+        overflow: hidden;
+    }
+
+    .acrobat-button-container-transparent {
+        opacity: 0.4 !important;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .acrobat-button-container-transparent:hover,
+    .acrobat-button-container-transparent:focus,
+    .acrobat-button-container-transparent:active {
+        opacity: 1;
+    }
+
+    .acrobat-button > svg {
+        flex-shrink: 0;
+        margin: 4px 5px 5px 5px;
+        width: 22px;
+        height: 22px;
+        pointer-events: none;
+        fill: #b40000;
+    }
+    .acrobat-button:has(.close-btn.open),
+    .expand-acrobat-button {
+        width: 64px;
+    }
+
+    .disabled {
+        background: #B1B1B1;
+    }
+
+    .tooltip-text {
+        width: 160px;
+        visibility: hidden;
+        opacity: 0;
+        background-color: #FFFFFF;
+        color: #292929;
+        border-radius: 7px;
+        padding: 4px 1px 5px 9px;
+        position: absolute;
+        z-index: 1;
+        right: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-right: 10px;
+        transition: opacity 0.3s, visibility 0s linear 2s;
+        font-size: 12px;
+        line-height: 15px;
+        font-family: 'adobe-clean', Adobe Clean, sans-serif;
+        filter: drop-shadow(0px 1px 6px rgba(0, 0, 0, 0.12));
+    }
+
+    .tooltip-text::after {
+       content: '';
+       position: absolute;
+       top: 50%;
+       left: 100%;
+       transform: translateY(-50%);
+       border-width: 6px;
+       border-style: solid;
+       border-color: transparent transparent transparent #fff;
+    }
+
+    .show-tooltip {
+        visibility: visible;
+        opacity: 1;
+        line-height: 1.5;
+        font-family: 'adobe-clean', Adobe Clean, sans-serif;
+        transition: opacity 0.3s;
+        transition-delay: 500ms;
+    }
+
+    .close-btn {
+        position: relative;
+        display: none;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .close-btn svg {
+        fill: #464646;
+    }
+
+    .close-btn.showCloseButton {
+        opacity: 1;
+        display: flex;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        padding: 2px;
+    }
+
+    .fab-view-settings-dialog {
+        display: none;
+        position: absolute;
+        bottom: 40px;
+        z-index: 1;
+    }
+
+    .close-btn:hover {
+        background: #E6E6E6;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .fab-view-settings-dialog.showDialog {
+        display: block;
+    }
+    .close-btn .burger-icon {
+        display: inline;
+        margin-bottom: 2px;
+    }
+    .close-btn .close-icon {
+        display: none;
+    }
+    .close-btn.open .burger-icon {
+        display: none;
+    }
+    .close-btn.open .close-icon {
+        display: inline;
+    }
+    .tooltip-text .tooltip-text-content {
+        font-weight: bold;
+    }
+    .tooltip-text .tooltip-sub-text-text {
+        font-style: italic;
+        font-size: 11px;
+    }
+
+    /* Iframe wrapper for the icon */
+    .icon-iframe {
+        border: none;
+        width: 33px;
+        height: 34px;
+        background: transparent;
+        pointer-events: all;
+        flex-shrink: 0;
+    }
+    .draggable-handle {
+        display: none;
+        position: absolute;
+        right: var(--drag-handle-right, 12px);
+        cursor: grab;
+    }
+    .draggable-handle-visible {
+        display: flex;
+    }
+</style>
+
+<div class="acrobat-button-container" style="--fab-margin-right: 22px; --drag-handle-right: 6px;">
+    <div class="acrobat-button" role="button">
+        <div class="close-btn" role="button" aria-label="Show Acrobat AI FAB View Settings">
+            <svg class="close-icon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <mask id="mask0_8552_7892" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="14" height="14">
+                    <path d="M7.82482 7.00034L10.6374 4.18778C10.7893 4.03592 10.7893 3.78969 10.6374 3.63783L10.3625 3.36292C10.2106 3.21106 9.96446 3.21106 9.81255 3.36292L6.99995 6.17548L4.18734 3.36292C4.03543 3.21106 3.78933 3.21106 3.63743 3.36292L3.36247 3.63783C3.21056 3.78969 3.21056 4.03592 3.36247 4.18778L6.17507 7.00034L3.36247 9.81295C3.21056 9.96481 3.21056 10.2111 3.36247 10.3629L3.63743 10.6378C3.78933 10.7897 4.03543 10.7897 4.18734 10.6378L6.99995 7.82526L9.81255 10.6378C9.96446 10.7897 10.2106 10.7897 10.3625 10.6378L10.6374 10.3629C10.7893 10.2111 10.7893 9.96481 10.6374 9.81295L7.82482 7.00034Z" fill="#222222"></path>
+                </mask>
+                <g mask="url(#mask0_8552_7892)">
+                    <rect width="14" height="14"></rect>
+                </g>
+            </svg>
+            <svg class="burger-icon" width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <mask id="mask0_12188_28876" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="3" y="3" width="15" height="14">
+                <path d="M15.1285 12.8008H6.37852C6.08867 12.8008 5.85352 13.0359 5.85352 13.3258C5.85352 13.6156 6.08867 13.8508 6.37852 13.8508H15.1285C15.4184 13.8508 15.6535 13.6156 15.6535 13.3258C15.6535 13.0359 15.4184 12.8008 15.1285 12.8008Z" fill="#292929"></path>
+                <path d="M6.37852 6.85078H15.1285C15.4184 6.85078 15.6535 6.61562 15.6535 6.32578C15.6535 6.03594 15.4184 5.80078 15.1285 5.80078H6.37852C6.08867 5.80078 5.85352 6.03594 5.85352 6.32578C5.85352 6.61562 6.08867 6.85078 6.37852 6.85078Z" fill="#292929"></path>
+                <path d="M15.1285 9.30078H6.37852C6.08867 9.30078 5.85352 9.53594 5.85352 9.82578C5.85352 10.1156 6.08867 10.3508 6.37852 10.3508H15.1285C15.4184 10.3508 15.6535 10.1156 15.6535 9.82578C15.6535 9.53594 15.4184 9.30078 15.1285 9.30078Z" fill="#292929"></path>
+                </mask>
+                <g mask="url(#mask0_12188_28876)">
+                <rect x="3.75391" y="3" width="14" height="14" fill="#464646"></rect>
+                </g>
+            </svg>
+        </div>
+        <iframe id="icon-iframe" class="icon-iframe" srcdoc="&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;style&gt;
+        html {
+            height: 100%;
+            width: 100%;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            background: transparent;
+            overflow: hidden;
+            height: 100%;
+            width: 100%;
+            cursor: pointer;
+            pointer-events: all;
+        }
+        svg {
+            padding: 5px 5px 5px 6px;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;svg id=&quot;ImportedIcons&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;22&quot; height=&quot;22&quot; viewBox=&quot;0 0 22 22&quot;&gt;
+        &lt;path d=&quot;m6.21661,16.39534c-1.35034,2.23499-2.67933,3.64758-3.45616,3.64758-.12795.00539-.25276-.04056-.34667-.12762-.14818-.12483-.21629-.32065-.17758-.5105.14764-.80079,1.68628-1.95576,3.98041-3.00946Zm6.49075-3.19656c-.57993.12528-1.1792.27056-1.78689.43544-.4366.11893-.87951.24862-1.32255.38729.23541-.4949.4515-.98554.6398-1.452.24831-.6159.48156-1.232.69564-1.83456.18831.30354.38304.59839.58195.88207.39375.56092.81787,1.09736,1.19205,1.58176Zm-2.99822-10.63684c.08814-.18001.26644-.29855.46653-.31016.51149,0,.62276.63358.62276,1.1638-.06787,1.25011-.29293,2.48669-.66988,3.68055-.85816-2.33642-.73831-3.97319-.41942-4.53419h.00001Zm9.60883,12.20974c-.13359.4402-.56725.71808-1.023.6555-.15594-.00061-.3112-.02054-.46224-.05933-1.07834-.28263-2.07953-.80363-2.92976-1.5246.71719-.11267,1.44198-.17001,2.16797-.17149.48402-.00813.96771.03017,1.44442.11438.43447.09244.92449.33873.80261.98554Zm1.45515-1.0537c-1.01837-.83309-2.33117-1.21735-3.63802-1.06487-.98482.00983-1.96732.09739-2.93836.26187-.62354-.62512-1.19003-1.30467-1.69272-2.03054-.38314-.54455-.73672-1.10931-1.05923-1.69182.54287-1.57384.85986-3.2167.94151-4.87953,0-1.49369-.57564-3.09087-2.19132-3.09087-.56296.01952-1.07528.33036-1.35261.82066-.68906,1.2165-.41298,3.72002.68705,6.26756-.38306,1.17041-.80046,2.31007-1.31196,3.57265-.43687,1.08123-.93191,2.13803-1.48293,3.16579-1.64775.68213-5.15115,2.33642-5.48494,4.16456-.10306.53569.0783,1.08658.47942,1.45629.39145.35044.90217.53779,1.42737.5236,2.10998,0,4.21366-3.003,5.63044-5.58789.80461-.2816,1.62641-.53671,2.44391-.759.8967-.24407,1.76345-.44427,2.58082-.594,1.39014,1.39224,3.25004,2.21523,5.21531,2.30773,1.36751,0,1.87887-.60942,2.06516-1.122.20733-.5893.08589-1.24438-.3189-1.72019Z&quot; fill=&quot;var(--iconRed, #d31510)&quot; fill-rule=&quot;evenodd&quot;/&gt;
+    &lt;/svg&gt;
+&lt;/body&gt;
+&lt;/html&gt; " fsframeid="0-1"></iframe>
+    </div>
+    <div class="fab-view-settings-dialog"></div>
+    <div class="tooltip-text">
+        <span id="tooltipTextEnabled" class="translate tooltip-text-content">Obtén resúmenes e información clave con el Asistente de IA</span>
+        <span id="tooltipTextSubText" class="translate tooltip-sub-text-text">con tecnología de Adobe Acrobat</span>
+    </div>
+    <div class="draggable-handle">
+        <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4.60039 13.0699C5.26313 13.0699 5.80039 12.5327 5.80039 11.8699C5.80039 11.2072 5.26313 10.6699 4.60039 10.6699C3.93765 10.6699 3.40039 11.2072 3.40039 11.8699C3.40039 12.5327 3.93765 13.0699 4.60039 13.0699Z" fill="#292929"></path>
+            <path d="M4.60039 8.27109C5.26313 8.27109 5.80039 7.73384 5.80039 7.07109C5.80039 6.40835 5.26313 5.87109 4.60039 5.87109C3.93765 5.87109 3.40039 6.40835 3.40039 7.07109C3.40039 7.73384 3.93765 8.27109 4.60039 8.27109Z" fill="#292929"></path>
+            <path d="M4.60039 3.47031C5.26313 3.47031 5.80039 2.93305 5.80039 2.27031C5.80039 1.60757 5.26313 1.07031 4.60039 1.07031C3.93765 1.07031 3.40039 1.60757 3.40039 2.27031C3.40039 2.93305 3.93765 3.47031 4.60039 3.47031Z" fill="#292929"></path>
+            <path d="M9.4002 13.0699C10.0629 13.0699 10.6002 12.5327 10.6002 11.8699C10.6002 11.2072 10.0629 10.6699 9.4002 10.6699C8.73745 10.6699 8.2002 11.2072 8.2002 11.8699C8.2002 12.5327 8.73745 13.0699 9.4002 13.0699Z" fill="#292929"></path>
+            <path d="M9.4002 8.27109C10.0629 8.27109 10.6002 7.73384 10.6002 7.07109C10.6002 6.40835 10.0629 5.87109 9.4002 5.87109C8.73745 5.87109 8.2002 6.40835 8.2002 7.07109C8.2002 7.73384 8.73745 8.27109 9.4002 8.27109Z" fill="#292929"></path>
+            <path d="M9.4002 3.47031C10.0629 3.47031 10.6002 2.93305 10.6002 2.27031C10.6002 1.60757 10.0629 1.07031 9.4002 1.07031C8.73745 1.07031 8.2002 1.60757 8.2002 2.27031C8.2002 2.93305 8.73745 3.47031 9.4002 3.47031Z" fill="#292929"></path>
+        </svg>
+    </div>
+</div>
+</template></div></html>
